@@ -1,0 +1,62 @@
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500");
+
+
+.feature {
+    background: url("../img/yellow_blue_mtn.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1330px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+}
+
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.intro-container .eightcol {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 300;
+
+}
+
+.intro-container .eightcol1 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 300;
+
+}
+
+.beerHome-intro-text-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 15px 0;
+
+}
