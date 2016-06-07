@@ -436,38 +436,52 @@
 }
 
 #group1 {
-  height: 1000px;
   position: relative;
   transform-style: preserve-3d;
-  height: 100vh;
+  height: 1200px;
   font-size: 20px;
+  z-index: 1;
 }
 
-#group1 .background {
+.background {
   transform: translateZ(-1px) scale(2);
-  height: 500px;
+  height: 800px;
   width: 100%;
   position: absolute;
   top: calc(250px - 50vh);
+  background-size: cover;
+  padding-top: 100px;
+}
+#group1 .background{
   background-image: url('../img/warm_mtns.png');
+  background-size: cover;
   -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
   box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-  background-size: 100% 100%;
-  padding-top: 100px;
-
 }
 
 .foreground {
   position: absolute;
-  top: 500px;
-  height: 300px;
+  top: 526px;
+  height: 200px;
   width: 100%;
-  background: white;
-  opacity: 0.8;
   padding-top: 100px;
 }
 
+#group1 .foreground {
+  background: white;
+  opacity: 0.4;
+}
+#group2 {
+    position: relative;
+    transform-style: preserve-3d;
+    height: 100vh;
+    font-size: 20px;
+}
+#group2 .background {
+  background-image: url('../img/hops_two.png');
+  background-size: contain;
+}
 
 
 
