@@ -1,9 +1,6 @@
 /* fonts */
-@font-face {
-  font-family: Thirsty;
-  src: url("styles/fonts/ThirstyScriptExtraBoldDemo.otf") format("opentype");
-  }
-
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+@import url("http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500");
 /* FIRST PAGE */
 .landing-container {
   /*background-image: url('../img/mountain_overlay.png');
@@ -22,6 +19,7 @@
   background-repeat: no-repeat;
   background-size:cover;
   height: 400px;
+  padding-top: 100px;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -38,9 +36,10 @@
   flex-grow: 2;
 }
 .heading-holder h1 {
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Special Elite', cursive;;
+  font-weight: bold;
   text-align: center;
-  color: #a30400;
+  color: #326b66;
   font-size: 45px;
   padding-left: 5px;
 }
@@ -53,7 +52,7 @@
   align-self: flex-start;
 }
 .landing-small-logo img {
-  height: 350px;
+  height: 300px;
   align-self: center;
 }
 
@@ -71,10 +70,11 @@
   align-items: center;
 }
 .landing-text h1 {
-  font-family: 'Roboto', sans-serif;
-  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  color: #818181;
+  text-shadow: 0 -1px 1px rgba(0,0,0,.2);
   font-size: 36px;
-  line-height: 3.5rem;
+  line-height: 2.5rem;
   text-align: center;
 }
 .landing-beer-container {
@@ -160,24 +160,33 @@
 .love-serve {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   order: 3;
   height: 400px;
   width: 100%;
+  padding-top: 100px;
 }
 .love-serve img {
   text-align: center;
   align-self: center;
-  height: 400px;
+  margin-top: 10px;
+  height: 250px;
 }
 .home-container h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Maven Pro', sans-serif;;
 }
 .nav-bar-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   height: 200px;
+}
 
+.nav-bar-container-small {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 100px;
 }
 .nav-small-logo {
   display: flex;
@@ -193,8 +202,11 @@
 }
 .nav-bar {
   display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
   order: 2;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Special Elite', cursive;
   text-transform: uppercase;
   border: transparent;
   background: transparent;
@@ -227,8 +239,7 @@
 
 .highlight {
   font-family: 'Maven Pro', sans-serif;
-  font-weight: bold;
-  /*background-color: rgba(0,0,0,0.65);*/
+  font-weight: 900;
   font-size: 50px;
   border-radius: 5px;
   align-self: center;
@@ -252,15 +263,16 @@
   align-items: center;
 }*/
 .home-text {
-  font-family: 'Roboto', sans-serif;
   background: rgba(255,255,255,0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .home-text p{
+  font-family: 'Roboto', sans-serif;
   color: #326b66;
   font-size: 18px;
   text-align: center;
@@ -268,25 +280,84 @@
   width: 50%;
 }
 .home-text h2{
+  font-family: 'Special Elite', cursive;
   color: #818181;
   text-transform: uppercase;
   text-align: center;
   font-size: 32px;
   line-height: 3.5rem;
 }
-.petition-text {
-  height: 350px;
+.petition-text-container {
+  height: 500px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
   justify-content: center;
-  align-items: center;
+  width: 100%;
+}
+.petition-text {
+  width: 50%;
+  order: 2;
   background-color: #326b66;
   border-style: dotted;
   border-width: thick;
   border-color: #818181;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.petition-text img {
+#petition-text-p {
+  padding-top: 10px;
+  width: 100%;
+  padding-bottom: 50px;
+  color: rgba(255,255,255,0.4);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 19px;
+  line-height: 2em;
+  text-align: center;
+  align-self: flex-end;
+}
+.petition-image {
   align-self: center;
-  height: 250px;
+  height: 300px;
+  order: 2;
+}
+.petition-left {
+  order: 1;
+  width: 50%;
+  background-color: #f6f0b1;
+  border-style: solid;
+  border-width: thick;
+  border-color: rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.petition-left img {
+  height: 400px;
+  align-self: center;
+  order: 2;
+}
+.petition-left h1 {
+  font-family: 'Special Elite', cursive;
+  font-size: 28px;
+  color: #326b66;
+  text-align: center;
 }
 
 
@@ -297,7 +368,6 @@
 .agegate-container {
   background-image: url('../img/yellow_mountains.png');
   background-size: cover;
-  font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,10 +392,12 @@
 }
 .agegate-container .small-logo img{
   align-self: center;
-  height: 300px;
+  height: 250px;
 }
 .agegate-container h3 {
+  font-family: 'Special Elite', cursive;
   color: #F6F0B1;
+  line-height: 1.5rem;
   padding-top: 25px;
   font-weight: bold;
   align-self: baseline;
@@ -333,9 +405,10 @@
   font-size: 24px;
 }
 .agegate-check p {
+  font-family: 'Maven Pro', sans-serif;
   line-height: 1.5rem;
   align-self: center;
-  padding-top: 40px;
+  padding-top: 25px;
   font-weight: 200;
   font-size: 18px;
 }
@@ -373,7 +446,7 @@
   overflow: hidden;
 }
 .groupOne .parallax__layer--base {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Special Elite', cursive;
   background-image: url('../img/mountain_landscape_c.png');
   background-size: 100% 100%;
 }
@@ -423,9 +496,13 @@
   transform-style: preserve-3d;
   transform: translate3d(700px, 0, -800px) rotateY(30deg);
 }
-
+.about-container{
+  height: 100%;
+}
 #container {
-  position: fixed;
+  position: absolute;
+  background-attachment: fixed;
+  height: 1185px;
   top: 0;
   left: 0;
   right: 0;
@@ -438,56 +515,175 @@
 #group1 {
   position: relative;
   transform-style: preserve-3d;
-  height: 1200px;
+  height: 100vh;
   font-size: 20px;
   z-index: 1;
 }
 
 .background {
   transform: translateZ(-1px) scale(2);
-  height: 800px;
   width: 100%;
   position: absolute;
-  top: calc(250px - 50vh);
   background-size: cover;
   padding-top: 100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 #group1 .background{
-  background-image: url('../img/warm_mtns.png');
+  height: 800px;
+  top: calc(250px - 50vh);
+  background-image: url('../img/mountain_overlay.png');
   background-size: cover;
   -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
   box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  flex-direction: column;
+  align-content: center;
+}
+.header-image {
+  text-align: center;
+  margin: auto;
+  height: 300px;
+  padding-bottom: 50px;
+  order: 2;
+}
+#group1 .background h1 {
+  width: 100%;
+  font-size: 72px;
+  text-shadow: 0 -1px 1px rgba(0,0,0,.5);
+  font-family: 'Special Elite', cursive;
+  color: white;
+  order: 1;
+  text-align: center;
 }
 
 .foreground {
   position: absolute;
-  top: 526px;
+  transform: translateZ(0);
+  top: 587px;
   height: 200px;
   width: 100%;
   padding-top: 100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 #group1 .foreground {
   background: white;
   opacity: 0.4;
+  font-family: 'Special Elite', cursive;
+  text-shadow: 0 -1px 1px rgba(0,0,0,.25);
+  font-size: 30px;
+  text-align: center;
 }
 #group2 {
     position: relative;
     transform-style: preserve-3d;
-    height: 100vh;
-    font-size: 20px;
+    height: 600px;
+    font-size: 18px;
+    font-family: 'Special Elite', cursive;
 }
 #group2 .background {
-  background-image: url('../img/hops_two.png');
-  background-size: contain;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  height: 1000px;
+  /*background-image: url('../img/hops_two.png');
+  background-size: contain;*/
+  align-items: center;
+  background-color: #f6f0b1;
 }
 
-
-
-
-
-
+#group2 .background p {
+  margin:auto;
+  order: 2;
+  padding: 100px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 19px;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+#group2 .background img {
+  order: 1;
+  height: 400px;
+  margin-left: 75px;
+  -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+.about-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.2em;
+  line-height: 2em;
+  font-weight: 300;
+}
+.nav-bar-about {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  order: 2;
+  font-family: 'Special Elite', cursive;
+  text-transform: uppercase;
+  border: transparent;
+  background: transparent;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: background-color ease-in .5s, box-shadow ease-in 1s;
+	transition: background-color ease-in .5s, box-shadow ease-in 1s;
+}
+.nav-bar-about a {
+  text-decoration: none;
+  font-size: 24px;
+  padding: 1em;
+  color: white;
+  cursor: pointer;
+}
+.nav-bar-about a:hover {
+  color: #f6f0b1;
+  transform: scale(1.1);
+}
+.feature-about {
+  background: url("../img/mountain_overlay.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1250px;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+}
+.feature-about h1 {
+  width: 100%;
+  padding-top: 200px;
+  font-size: 72px;
+  text-shadow: 0 -1px 1px rgba(0,0,0,.5);
+  font-family: 'Special Elite', cursive;
+  color: #f6f0b1;
+  order: 1;
+  text-align: center;
+}
 /*animations*/
 
 .fade-in {
@@ -507,6 +703,16 @@
 .delay-17ms {  animation-delay: 1.7s; }
 .delay-18ms {  animation-delay: 1.8s; }
 .delay-19ms {  animation-delay: 1.9s; }
+.delay-20ms {  animation-delay: 2s; }
+.delay-21ms {  animation-delay: 2.1s; }
+.delay-22ms {  animation-delay: 2.2s; }
+.delay-23ms {  animation-delay: 2.3s; }
+.delay-24ms {  animation-delay: 2.4s; }
+.delay-25ms {  animation-delay: 2.5s; }
+.delay-26ms {  animation-delay: 2.6s; }
+.delay-27ms {  animation-delay: 2.7s; }
+.delay-28ms {  animation-delay: 2.8s; }
+.delay-29ms {  animation-delay: 2.9s; }
 
 .fade-in-right {
   opacity: 0;
@@ -514,4 +720,49 @@
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
+}
+.fade-out {
+	opacity: 1;
+	animation-name: fadeOut;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.fade-in-left {
+  opacity: 0;
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }

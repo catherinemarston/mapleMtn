@@ -37,17 +37,17 @@ angular.module('mapleApp', ['ngAnimate', 'ui.router']).config(function($statePro
     url: '/homeFiz',
     templateUrl: './views/fizzyHome.html'
   })
-      .state('fizzyHome.about', {
-        url: '/about',
+      .state('fizAbout', {
+        url: '/homeFiz/about',
         templateUrl: './views/about.html'
       })
 
-      .state('fizzyHome.fizzy', {
-        url: '/fizzyDrinks',
+      .state('fizFizzy', {
+        url: '/homeFiz/fizzyDrinks',
         templateUrl: './views/fizzy.html'
       })
-      .state('fizzyHome.contact', {
-        url: '/contact',
+      .state('fizContact', {
+        url: '/homeFiz/contact',
         templateUrl: './views/contact.html'
       })
 

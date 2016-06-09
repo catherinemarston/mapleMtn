@@ -1,10 +1,10 @@
 <div class="app ng-scope" id="app">
     <section class="main-top-section">
         <div class="container feature">
-            <div class="nav-bar-container">
-                <div class="nav-small-logo" ng-click="showMobileNav = !showMobileNav">
+            <div class="nav-bar-container-small">
+                <!-- <div class="nav-small-logo" ng-click="showMobileNav = !showMobileNav">
                     <img src="./img/black_white_logo.png"/>
-                </div>
+                </div> -->
 
                 <div class="nav-bar">
                     <a ui-sref-active="active" ui-sref="beerHome">
@@ -37,6 +37,7 @@
                                     CELEBRATE</span>
                             </span>
                         </span>
+                        <img src = "./img/blue_logo_two.png"/>
                     </div>
                 </div>
             </div>
@@ -66,11 +67,15 @@
                             These standards combined with the unique process of using only purified sunbaked water and traditional brewing methods, ensures a level of quality that shines no matter the method of storage (bottle, can, keg).
                         </p>
 
+                <div class = "petition-text-container">
+                        <div class = "petition-left">
+                          <h1>Check out our HANDCRAFTED BEERS!</h1>
+                          <a ui-sref-active="active" ui-sref="beers"><img animate-directive alt = "beer-image" src = "./img/bottle_gray.png"/></a>
+
+                        </div>
                         <div class="petition-text">
-                            <p>
-                                We are hoping to have our brewery completely functional by the end of this June. Please sign this petition to convince Provo that we have community support! Thank you!
-                            </p>
-                            <img src="./img/petitionSign.png"/>
+                            <p id = "petition-text-p">We are in the midst of building a great brewery, and we would love your support! Help Maple Mountain Brewery by signing and telling everyone you know to do the same! Thank you for your support.</p>
+                            <a href = "http://www.ipetitions.com/petition/provos-first-brewery" target = "_blank"><img animate-directive class = "petition-image" alt = "petition-sign" src="./img/petitionSign.png"/></a>
                         </div>
                     </div>
                 </div>
