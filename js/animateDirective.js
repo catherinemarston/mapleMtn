@@ -12,5 +12,5 @@ angular.module('mapleApp').directive('animateDirective', function(){
                 element.css("transform", "initial");
             });
         }
-    };
+    }
 })
