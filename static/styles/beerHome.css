@@ -1,0 +1,254 @@
+
+
+
+.feature {
+    background: url("../img/yellow_blue_mtn.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1330px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+}
+
+
+.home-text-image {
+    order: 1;
+    height: 410px;
+    margin:auto;
+    -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+.beer-image {
+  order: 1;
+  height: 475px;
+  margin:auto;
+}
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.intro-container .eightcol {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 300;
+
+}
+
+.intro-container .eightcol1 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 300;
+
+}
+
+.beerHome-intro-text-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 15px 0;
+    width: 100%;
+}
+.beerHome-intro-text-container-about {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    z-index: 9999;
+    width: 100%;
+}
+.menu {
+    background-color: rgb(246,231,171);
+    min-height: 1500px;
+    height: 2100px;
+}
+
+
+.menu-big {
+  margin: auto;
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.menu-big p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Special Elite', cursive;
+  align-self: center;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.menu-left {
+  margin: auto;
+  order: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-left h1, .menu-right h1 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #326b66;
+}
+.menu-left h2, .menu-right h2 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  line-height: 2.5em;
+}
+.menu-left img {
+  order:2;
+  height: 480px;
+  align-self: center;
+
+}
+.menu-right {
+  order: 2;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-right img {
+  order: 2;
+  align-self: center;
+  height: 480px;
+}
+
+.menu-small-text {
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.menu-small-text h1 {
+  text-align: center;
+  padding-top: 50px;
+  width: 100%;
+  font-family: 'Special Elite', cursive;
+  font-size: 54px;
+  text-shadow: 0 -1px 1px rgba(0,0,0,.3);
+  align-self: center;
+  margin: auto;
+  color: #326b66;
+}
+.menu-small-text p {
+  font-family: 'Special Elite', sans-serif;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5em;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 30px;
+}
+
+
+
+.animateblock {
+  opacity: 0;
+  -webkit-transition: all 1.5s linear;
+  -moz-transition: all 1.5s linear;
+  transition: all 1.5s linear;
+}
+
+.animateblock.animated {
+  opacity: 1;
+}
+
+/* animation transition styles */
+.animateblock.left {
+  margin-left: -5s%;
+}
+.animateblock.left.animated {
+  margin-left: 8%;
+}
+
+.animateblock.right {
+  display:block;
+
+}
+.animateblock.right.animated {
+
+}
+
+.animateblock.top {
+  display: block;
+  width: auto;
+  margin-top: -25px;
+}
+.animateblock.top.animated {
+  margin-top: 0px;
+}
+
+.animateblock.btm {
+  display: block;
+  width: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.animateblock.btm.animated {
+  margin-top: 0;
+}
+
+.animateblock.centerleft {
+  display: block;
+  width: auto;
+  margin-right: -10%;
+}
+.animateblock.centerleft.animated {
+  margin-right: 0;
+}
+
+.animateblock.centerright {
+  display: block;
+  width: auto;
+  text-align: center;
+  margin-left: -10%;
+}
+.animateblock.centerright.animated {
+  margin-left: 0;
+}

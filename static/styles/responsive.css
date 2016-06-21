@@ -1,0 +1,217 @@
+
+/*landing page */
+@media only screen and (max-width: 500px) {
+
+  .landing-beer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-beer {
+    justify-content: space-around;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+  .landing-beer img{
+    width: 100%;
+  }
+  .landing-logo-container {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 365px;
+  }
+  .landing-small-logo {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .landing-small-logo img {
+    height: 275px;
+    margin: auto;
+  }
+  .heading-holder {
+    flex-grow: 1;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .landing-beer-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .landing-beer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 50%;
+
+  }
+  .landing-beer img{
+
+  }
+  .landing-text h1 {
+    font-size: 24px;
+  }
+  .landing-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+
+  }
+  .landing-small-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+  }
+  .landing-small-logo img {
+    align-self: center;
+    margin: auto;
+    height: 29vh;
+    order: 2;
+
+  }
+  .heading-holder {
+    align-self: center;
+    order: 1;
+    margin-top: -20px;
+  }
+  .heading-holder h1 {
+    font-size: 30px;
+  }
+}
+
+/*age-gate */
+@media only screen and (max-width: 850px) {
+  .agegate-container {
+    background-image: url('../img/yellow_background_two.png');
+    background-size: cover;
+  }
+  .agegate-check {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 60%;
+  }
+  .small-logo-container {
+    display: flex;
+    align-content: center;
+    height: 350px;
+  }
+  .small-logo{
+    display: flex;
+    align-content: center;
+  }
+  .agegate-container .small-logo img {
+    height: 225px;
+    margin: auto;
+  }
+  .agegate-container h3 {
+    font-size: 20px;
+  }
+  .agegate-check p {
+    font-size: 16px;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+
+  }
+  .agegate-container button {
+    background: #f6f0b1;
+    margin: 0;
+    padding: 24px 50px;
+    color: #326b66;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-family: 'Special Elite', cursive;
+  }
+  #agegate-check-button {
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .agegate-container {
+
+
+  }
+  .agegate-check {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 60%;
+  }
+  .small-logo-container {
+    display: flex;
+    align-content: center;
+    height: 350px;
+  }
+  .small-logo{
+    display: flex;
+    align-content: center;
+  }
+  .agegate-container .small-logo img {
+    height: 225px;
+    margin: auto;
+  }
+  .agegate-container h3 {
+    font-size: 20px;
+
+  }
+  .agegate-check p {
+    font-size: 16px;
+
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .agegate-container button {
+    margin: 0;
+    padding: 24px 50px;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-family: 'Special Elite', cursive;
+  }
+  #agegate-check-button {
+    margin-top: 48px;
+  }
+}
+/*fizzy html and beer html */
+
+@media only screen and (max-width: 850px) {
+
+  .home-top {
+
+  }
+  .home-container {
+
+  }
+  .love-serve {
+
+  }
+
+  .nav-bar-container {
+
+  }
+
+  .nav-bar-container-small {
+
+  }
+  .nav-small-logo {
+
+  }
+  .nav-bar {
+
+  }
+
+}

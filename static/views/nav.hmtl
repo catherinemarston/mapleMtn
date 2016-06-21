@@ -1,0 +1,20 @@
+<div class="nav-bar-container">
+
+    <div class="nav-bar">
+        <a ui-sref-active="active" ui-sref="beerHome">
+            <span>Home</span>
+        </a>
+        <a ui-sref-active="active" ui-sref="beers">
+            <span>Beers</span>
+        </a>
+        <a ui-sref-active="active" ui-sref="fizzy">
+            <span>Fizzy Drinks</span>
+        </a>
+        <a ui-sref-active="active" ui-sref="about">
+            <span>About</span>
+        </a>
+        <a ui-sref-active="active" ui-sref="contact">
+            <span>Contact Us</span>
+        </a>
+    </div>
+</div>
